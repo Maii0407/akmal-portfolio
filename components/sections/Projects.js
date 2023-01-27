@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { FrontendTools } from '../toolsGrid/Frontend';
-import { BackendTools } from '../toolsGrid/Backend';
-import { MiscTools } from '../toolsGrid/Misc';
+import { Odinbook } from '../projects/Odinbook';
+import { PhotoTag } from '../projects/PhotoTag';
+import { MemoryGame } from '../projects/MemoryGame';
 
 import {
   Flex,
   Box,
 } from '@chakra-ui/react';
 
-export const SkillsSection = () => {
+export const ProjectSection = () => {
 
   return (
     <Flex
@@ -23,12 +23,12 @@ export const SkillsSection = () => {
         padding='5px 10px'
         marginLeft='10px'
       >
-        Tools & Skills
+        Featured Projects
       </Box>
 
-      <FrontendTools />
-      <BackendTools />
-      <MiscTools />
+      <Odinbook />
+      <PhotoTag />
+      <MemoryGame />
       
     </Flex>
   );

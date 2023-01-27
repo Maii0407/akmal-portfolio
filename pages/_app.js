@@ -4,6 +4,14 @@ import '@fontsource/big-shoulders-display';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
+  layerStyles: {
+    tool: {
+      backgroundColor: 'gray.700',
+      color: 'white',
+      borderRadius: '20px',
+      padding: '5px 10px'
+    }
+  },
   textStyles: {
     heading: {
       // fontFamily: '', //@fontsource/big-shoulders-stencil-display
