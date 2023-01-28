@@ -19,28 +19,36 @@ export const FooterSection = () => {
       paddingTop='50px'
       gap='20px'
     >
-      <Text
-        color='gray.500'
+      <Flex
+        direction={{ base: 'column', md: 'row' }}
+        alignItems='center'
+        gap='30px'
       >
-        Akmal Izuddin · 2023
-      </Text>
 
-      <Box
-        textStyle='heading'
-        fontSize='30px'
-        border='2px solid white'
-        borderRadius='10px'
-        padding='10px'
-      >
-        maii
-      </Box>
+        <Text
+          color='gray.500'
+        >
+          Akmal Izuddin · 2023
+        </Text>
+  
+        <Box
+          textStyle='heading'
+          fontSize='30px'
+          border='2px solid white'
+          borderRadius='10px'
+          padding='10px'
+        >
+          maii
+        </Box>
+  
+        <Text
+          color='gray.500'
+          marginBottom={{ base: '30px', md: '0' }}
+        >
+          All Right Reserved.
+        </Text>
 
-      <Text
-        color='gray.500'
-        marginBottom='30px'
-      >
-        All Right Reserved.
-      </Text>
+      </Flex>
 
       <Text
         color='gray.500'

@@ -21,7 +21,7 @@ export const ProjectSection = () => {
         borderBottom='2px solid'
         borderColor='gray.500'
         padding='5px 10px'
-        marginLeft='10px'
+        margin={{ base: '0 0 0 10px', md: '0 50px' }}
       >
         Featured Projects
       </Box>

@@ -28,6 +28,11 @@ const theme = extendTheme({
         backgroundColor: 'gray.900',
         color: 'white',
         fontFamily: `'Big Shoulders Display', curesive`,
+      },
+      'button, a': {
+        _hover: {
+          color: 'gray.900',
+        }
       }
     }
   }

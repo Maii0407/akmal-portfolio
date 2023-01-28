@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Box,
   Flex,
-  Grid,
   Icon,
   Text
 } from '@chakra-ui/react';
@@ -27,13 +26,18 @@ export const FrontendTools = () => {
     >
       <Box
         textStyle='bulletPoints'
-        textAlign='center'
+        textAlign={{ base: 'center', md: 'left' }}
+        textIndent={{ md: '50px' }}
         fontSize='25px'
       >
         Frontend Tools
       </Box>
-      <Grid
-        gridTemplateColumns='repeat(3, 1fr)'
+
+      <Box
+        display={{ base: 'grid', md: 'flex' }}
+        gridTemplateColumns={{ base: 'repeat(3, 1fr)', md: 'none' }}
+        gap={{ md: '30px' }}
+        margin={{ base: '0', md: '0 50px' }}
       >
         <Flex
           direction='column'
@@ -147,7 +151,8 @@ export const FrontendTools = () => {
             chakra ui
           </Text>
         </Flex>
-      </Grid>
+      </Box>
+
     </Flex>
   )
 }

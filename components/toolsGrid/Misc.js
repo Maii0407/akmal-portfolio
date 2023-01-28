@@ -24,13 +24,18 @@ export const MiscTools = () => {
     >
       <Box
         textStyle='bulletPoints'
-        textAlign='center'
+        textAlign={{ base: 'center', md: 'left' }}
+        textIndent={{ md: '50px' }}
         fontSize='25px'
       >
         Miscellaneous
       </Box>
-      <Grid
-        gridTemplateColumns='repeat(3, 1fr)'
+
+      <Box
+        display={{ base: 'grid', md: 'flex' }}
+        gridTemplateColumns={{ base: 'repeat(3, 1fr)', md: 'none' }}
+        gap={{ md: '30px' }}
+        margin={{ base: '0', md: '0 50px' }}
       >
         <Flex
           direction='column'
@@ -88,7 +93,8 @@ export const MiscTools = () => {
             linux
           </Text>
         </Flex>
-      </Grid>
+      </Box>
+      
     </Flex>
   )
 }

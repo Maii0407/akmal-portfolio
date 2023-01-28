@@ -15,6 +15,7 @@ export const ContactMeSection = () => {
 
   return (
     <Flex
+      id='contact'
       direction='column'
       paddingBottom='50px'
     >

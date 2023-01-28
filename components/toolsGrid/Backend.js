@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Box,
   Flex,
-  Grid,
   Icon,
   Text
 } from '@chakra-ui/react';
@@ -25,13 +24,18 @@ export const BackendTools = () => {
     >
       <Box
         textStyle='bulletPoints'
-        textAlign='center'
+        textAlign={{ base: 'center', md: 'left' }}
+        textIndent={{ md: '50px' }}
         fontSize='25px'
       >
         Backend Tools
       </Box>
-      <Grid
-        gridTemplateColumns='repeat(3, 1fr)'
+
+      <Box
+        display={{ base: 'grid', md: 'flex' }}
+        gridTemplateColumns={{ base: 'repeat(3, 1fr)', md: 'none' }}
+        gap={{ md: '30px' }}
+        margin={{ base: '0', md: '0 50px' }}
       >
         <Flex
           direction='column'
@@ -117,7 +121,8 @@ export const BackendTools = () => {
             railway.app
           </Text>
         </Flex>
-      </Grid>
+      </Box>
+
     </Flex>
   )
 }

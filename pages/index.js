@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import { LogoSection } from "@/components/sections/Logo";
 import { AboutMeSection } from "@/components/sections/AboutMe";
 import { SkillsSection } from "@/components/sections/Skills";
@@ -12,6 +14,9 @@ export default function Home() {
     <Flex
       direction='column'
     >
+      <Head>
+        <title>Akmal Izuddin</title>
+      </Head>
 
       <LogoSection />
       <AboutMeSection />
