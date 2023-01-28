@@ -89,7 +89,7 @@ export const PhotoTag = () => {
           padding='10px'
           color='gray.500'
         >
-          A "Where's Waldo" web app, but instead of finding Waldo, 
+          { `A "Where's Waldo" web app, but instead of finding Waldo, 
           users find Pokemon. The app was built using React and Firebase. The location of the Pokemon is 
           stored in Firebase, and tagged to the images. The app utilizes Firebase as a real-time 
           database and storage service, allowing users to quickly and easily locate and identify the 
@@ -97,7 +97,7 @@ export const PhotoTag = () => {
           experience, allowing users to easily navigate through the images and find the Pokemon 
           they are looking for. This project showcases your skills in using popular web development 
           technologies to create a fun and engaging application that can be enjoyed by users of all 
-          ages.
+          ages.` }
         </Text>
 
         <Flex
