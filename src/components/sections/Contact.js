@@ -1,5 +1,4 @@
 import React from 'react';
-import NextLink from 'next/link';
 
 import {
   Flex,
@@ -50,7 +49,7 @@ export const ContactMeSection = () => {
         padding='25px'
       >
         <IconButton
-          as={ NextLink }
+          as='a'
           href='https://github.com/Maii0407'
           target='_blank'
           icon={ <Icon as={ SiGithub } boxSize='50px' /> }

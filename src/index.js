@@ -1,7 +1,12 @@
-import '@fontsource/big-shoulders-stencil-display';
 import '@fontsource/big-shoulders-display';
+import '@fontsource/big-shoulders-stencil-display';
 
-import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+
+import { App } from './App';
 
 const theme = extendTheme({
   layerStyles: {
@@ -38,10 +43,11 @@ const theme = extendTheme({
   }
 });
 
-export default function App({ Component, pageProps }) {
-  return (
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
     <ChakraProvider theme={ theme } >
-      <Component {...pageProps} />
+      <App />
     </ChakraProvider>
-  )
-}
+  </React.StrictMode>
+);

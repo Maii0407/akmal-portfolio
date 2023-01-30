@@ -1,6 +1,7 @@
 import React from 'react';
 
-import NextLink from 'next/link';
+import verticalImage from '../../images/photo-tagging-vertical.png';
+import gifImage from '../../images/photo-tag.gif';
 
 import {
   Box,
@@ -26,7 +27,7 @@ export const PhotoTag = () => {
 
       <Image
         display={{ md: 'none' }}
-        src={ '/photo-tagging-vertical.png' }
+        src={ verticalImage }
         alt='odinbook-01'
         width='100%'
         borderRadius='10px'
@@ -34,7 +35,7 @@ export const PhotoTag = () => {
       />
       <Image
         display={{ base: 'none', md: 'block' }}
-        src={ '/photo-tag.gif' }
+        src={ gifImage }
         alt='odinbook-01'
         borderRadius='10px'
       />
@@ -107,7 +108,7 @@ export const PhotoTag = () => {
           margin='20px 0'
         >
           <Button
-            as={ NextLink }
+            as='a'
             href='https://github.com/Maii0407/photo-tagging-app'
             target='_blank'
             variant='outline'
@@ -115,7 +116,7 @@ export const PhotoTag = () => {
             View Code
           </Button>
           <Button
-            as={ NextLink }
+            as='a'
             href='https://maii0407.github.io/photo-tagging-app/'
             target='_blank'
             variant='outline'

@@ -1,5 +1,4 @@
 import React from 'react';
-import NextLink from 'next/link';
 
 import {
   Flex,
@@ -75,7 +74,7 @@ export const AboutMeSection = () => {
           </Box>
     
           <Button
-            as={ NextLink }
+            as='a'
             href='#contact'
             alignSelf='center'
             variant='solid'

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import NextLink from 'next/link';
+import verticalImage from '../../images/memory-game-vertical.png';
+import gifImage from '../../images/memory-game.gif';
 
 import {
   Box,
@@ -25,7 +26,7 @@ export const MemoryGame = () => {
 
       <Image
         display={{ md: 'none' }}
-        src={ '/memory-game-vertical.png' }
+        src={ verticalImage }
         alt='odinbook-01'
         width='100%'
         borderRadius='10px'
@@ -33,7 +34,7 @@ export const MemoryGame = () => {
       />
       <Image
         display={{ base: 'none', md: 'block' }}
-        src={ '/memory-game.gif' }
+        src={ gifImage }
         alt='odinbook-01'
         borderRadius='10px'
       />
@@ -91,7 +92,7 @@ export const MemoryGame = () => {
           margin='20px 0'
         >
           <Button
-            as={ NextLink }
+            as='a'
             href='https://github.com/Maii0407/memory-card-react'
             target='_blank'
             variant='outline'
@@ -99,7 +100,7 @@ export const MemoryGame = () => {
             View Code
           </Button>
           <Button
-            as={ NextLink }
+            as='a'
             href='https://maii0407.github.io/memory-card-react/'
             target='_blank'
             variant='outline'

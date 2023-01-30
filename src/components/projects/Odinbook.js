@@ -1,5 +1,7 @@
 import React from 'react';
-import NextLink from 'next/link';
+
+import verticalImage from '../../images/odinbook-01.png';
+import gifImage from '../../images/helloTHERE.gif';
 
 import {
   Box,
@@ -26,7 +28,7 @@ export const Odinbook = () => {
     >
       <Image
         display={{ md: 'none' }}
-        src={ '/odinbook-01.png' }
+        src={ verticalImage }
         alt='odinbook-01'
         width='100%'
         border='2px solid'
@@ -36,7 +38,7 @@ export const Odinbook = () => {
       />
       <Image
         display={{ base: 'none', md: 'block' }}
-        src={ '/helloTHERE.gif' }
+        src={ gifImage }
         alt='odinbook-01'
         border='2px solid'
         borderColor='gray.600'
@@ -133,7 +135,7 @@ export const Odinbook = () => {
           margin='20px 0'
         >
           <Button
-            as={ NextLink }
+            as='a'
             href='https://github.com/Maii0407/hi-there'
             target='_blank'
             variant='outline'
@@ -141,7 +143,7 @@ export const Odinbook = () => {
             View Code
           </Button>
           <Button
-            as={ NextLink }
+            as='a'
             href='https://hi-there-production.up.railway.app'
             target='_blank'
             variant='outline'
