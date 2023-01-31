@@ -34,9 +34,14 @@ export const AboutMeSection = () => {
           padding={{ base: '10px', md: '50px' }}
           color='gray.500'
         >
-          Deeply invested in the life-long learning mentality, I am a full stack developer with 2 years of programming
-          experience. My background in education has taught me the importance of user-first approach and attention to detail
-          in design. My main focus is on creating responsive layouts using the JavaScript stack of React and NodeJS.
+          Highly motivated and detail-oriented Junior Web Developer with a passion for 
+          delivering exceptional web solutions. Possessing 2 years of experience in 
+          JavaScript, Node, and React, I am skilled in problem-solving and working 
+          effectively in a team environment. I am always eager to take on new 
+          challenges and utilize my technical skills to contribute to the 
+          development of innovative web applications. With a strong focus on 
+          user-centered design and a commitment to life-long learning, I strive to 
+          stay at the forefront of the latest technologies and trends in the industry.
         </Text>
 
         <Flex
