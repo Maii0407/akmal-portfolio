@@ -1,7 +1,7 @@
 import React from 'react';
 
-import verticalImage from '../../images/memory-game-vertical.png';
-import gifImage from '../../images/memory-game.gif';
+import mobileGif from '../../images/digimatch-mobile.gif';
+import desktopGif from '../../images/digimatch-desktop.gif';
 
 import {
   Box,
@@ -26,7 +26,7 @@ export const MemoryGame = () => {
 
       <Image
         display={{ md: 'none' }}
-        src={ verticalImage }
+        src={ mobileGif }
         alt='odinbook-01'
         width='100%'
         borderRadius='10px'
@@ -34,7 +34,7 @@ export const MemoryGame = () => {
       />
       <Image
         display={{ base: 'none', md: 'block' }}
-        src={ gifImage }
+        src={ desktopGif }
         alt='odinbook-01'
         borderRadius='10px'
       />
@@ -101,7 +101,7 @@ export const MemoryGame = () => {
           </Button>
           <Button
             as='a'
-            href='https://maii0407.github.io/memory-card-react/'
+            href='https://digimatch.vercel.app/'
             target='_blank'
             variant='outline'
           >
